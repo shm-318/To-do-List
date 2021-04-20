@@ -24,6 +24,7 @@ body
     
 }
 
+
 #todo-list,#list-container
 {
     overflow-y: scroll;
@@ -53,11 +54,13 @@ ul{
     padding-right: 20px;
     font-size: 2rem;
     width: auto;
-    transition: all 0.5s ease;
+    transition: all 0.7s ease;
 }
 .a1{
      position: relative;
      left: 65%;
+     margin-top: 1rem;
+     margin-bottom: 1rem;
 }
 .a1 input{
     height: 50px;
@@ -75,6 +78,7 @@ h1{
     left: 35%;
     top: 35%;
     font-weight:100;
+    margin-bottom: 2.5rem;
 
 }
 .btn1{
@@ -83,6 +87,7 @@ h1{
 }
 .btn,.reset,.btn1{
     cursor:pointer;
+    outline: none;
 }
 .reset{
     border: none;position:relative;right:0;
@@ -93,10 +98,17 @@ h1{
     text-decoration: line-through;
     opacity: 0.3;
 }
+*:focus {
+    outline: 0 !important;
+}
 
 .fall{
-    transform: translateY(9rem) rotate(15deg);
+    transform: translateY(19rem) rotate(15deg);
     opacity: 0.7;
+}
+#list-container{
+    position: relative;
+    top:0;
 }
 
 
@@ -120,7 +132,7 @@ h1{
     .a1{
         position: relative;
         left: 5%;
-        top:-20%;
+        top:-45%;
    }
    .a1 input{
        width: 75%;
