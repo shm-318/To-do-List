@@ -1,0 +1,140 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body
+{
+   background:url(Todo.jpg);
+   background-position: center;
+   font-family: 'Lobster', cursive;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.container{
+    height: 80vh;
+    width:80vw;
+    max-width: 100vw;
+    background:rgb(203, 207, 170);
+    border-radius:30px;
+    box-shadow: 0 0 100px rgb(187, 63, 63);
+    margin-top: 5rem;
+    display:grid;
+    
+}
+
+#todo-list,#list-container
+{
+    overflow-y: scroll;
+    overflow-x:hidden;
+   
+}
+::-webkit-scrollbar{
+    display:none;
+}
+ul{
+    list-style: none;
+}
+.fas{
+    background-color:rgb(203, 207, 170);
+}
+.task{
+    padding:1rem;
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: 0.1fr 3fr 0.1fr;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgb(48, 97, 160);
+    margin: 1rem;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 2rem;
+    width: auto;
+    transition: all 0.5s ease;
+}
+.a1{
+     position: relative;
+     left: 65%;
+}
+.a1 input{
+    height: 50px;
+    width:auto;
+    max-width: 100%;
+    outline: none;
+    border: 2px solid black;
+    border-radius: 30px;
+    padding: 1rem;
+    
+}
+h1{
+    position: relative;
+    font-size: 3rem;
+    left: 35%;
+    top: 35%;
+    font-weight:100;
+
+}
+.btn1{
+    border: none;margin-right:1rem;
+    color:green;
+}
+.btn,.reset,.btn1{
+    cursor:pointer;
+}
+.reset{
+    border: none;position:relative;right:0;
+    color:red;
+
+}
+.strike {
+    text-decoration: line-through;
+    opacity: 0.3;
+}
+
+.fall{
+    transform: translateY(9rem) rotate(15deg);
+    opacity: 0.7;
+}
+
+
+.hide{
+    visibility: hidden;  /* The layout Gets Affected when display is set to none*/
+}
+
+
+@media only screen and (max-width: 600px) {
+    body {
+      display:flex;
+      align-items: center;
+      justify-content:center;
+    }
+    h1{
+        font-size: 7vw;
+        position: relative;
+        left: 25%;
+        top: 15%;
+    }
+    .a1{
+        position: relative;
+        left: 5%;
+        top:-20%;
+   }
+   .a1 input{
+       width: 75%;
+   }
+   .task{
+       width: 85%;
+       font-size:large;
+       position: relative;
+       left:-15%;
+       transition: all 1s ease;
+   }
+   .fas{
+    background-color:rgb(203, 207, 170);
+    size: 5vw;
+}
+
+  }
